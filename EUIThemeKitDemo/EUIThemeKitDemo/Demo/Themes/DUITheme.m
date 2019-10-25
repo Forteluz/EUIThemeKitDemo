@@ -6,19 +6,19 @@
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import "FDUITheme.h"
+#import "DUITheme.h"
 
-@implementation FDUITheme
+@implementation DUITheme
 @synthesize identifier = _identifier;
-
 - (UIColor *)fd_primaryColor { return nil; }
 - (UIColor *)fd_secondaryColor { return nil; }
 - (UIColor *)fd_textColor { return nil; }
 - (UIColor *)fd_backgrounndColor { return nil; }
-
+- (UIEdgeInsets)fd_insets { return UIEdgeInsetsZero; }
+- (UIFont  *)fd_textFont { return nil; }
 @end
 
-@implementation FDUIRedTheme
+@implementation DUIThemeRed
 
 - (NSString *)identifier {
     return @"red";
@@ -50,7 +50,7 @@
 
 @end
 
-@implementation FDUIBlueTheme
+@implementation DUIThemeBlue
 
 - (NSString *)identifier {
     return @"blue";
@@ -73,7 +73,7 @@
 }
 
 - (UIFont  *)fd_textFont {
-    return [UIFont systemFontOfSize:14];
+    return [UIFont systemFontOfSize:20];
 }
 
 - (UIEdgeInsets)fd_insets {

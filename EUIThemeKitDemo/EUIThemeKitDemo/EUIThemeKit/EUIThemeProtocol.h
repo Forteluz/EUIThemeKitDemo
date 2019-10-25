@@ -11,7 +11,8 @@
 @protocol EUIThemeProtocol <NSObject>
 
 /*!
- 主题需要指定一个唯一 ID
+ 主题需要指定唯一标识
+ @warning identifier 不能重复
  */
 @property (nonatomic, copy) NSString *identifier;
 

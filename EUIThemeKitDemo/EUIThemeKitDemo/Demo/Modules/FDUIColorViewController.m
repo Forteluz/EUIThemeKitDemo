@@ -8,25 +8,25 @@
 
 #import "FDUIColorViewController.h"
 ///< Component
-#import "FDUIColorTestView.h"
-#import "FDUIColorTest2View.h"
+#import "DUICustomView.h"
+#import "DUICustomChildView.h"
 ///< Theme
 #import "EUIThemeKit.h"
-#import "FDUIColorTemplet.h"
-#import "FDUITheme.h"
+#import "DUIThemeTemplet.h"
+#import "DUITheme.h"
 
 @implementation FDUIColorViewController {
-    FDUIColorTemplet *_themeTemplet;
+    DUIThemeTemplet *_themeTemplet;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     ///< 配置主题
-    _themeTemplet = [FDUIColorTemplet new];
+    _themeTemplet = [DUIThemeTemplet new];
     
     ///< 应用主题
-    [self.view setBackgroundColor:FDUIBackgroundColor];
+    [self.view setBackgroundColor:DUIBackgroundColor];
     
     [self p_addButtonComponent];
     [self p_addTestViewComponent];
@@ -44,12 +44,12 @@
 }
 
 - (void)p_addTestViewComponent {
-    FDUIColorTestView *one = [[FDUIColorTestView alloc] initWithFrame:CGRectMake(100, 230, 100, 100)];
+    DUICustomView *one = [[DUICustomView alloc] initWithFrame:CGRectMake(100, 230, 100, 100)];
     [self.view addSubview:one];
 }
 
 - (void)p_addTest2ViewComponent {
-    FDUIColorTest2View *one = [[FDUIColorTest2View alloc] initWithFrame:CGRectMake(100, 330, 100, 100)];
+    DUICustomChildView *one = [[DUICustomChildView alloc] initWithFrame:CGRectMake(100, 350, 100, 100)];
     [self.view addSubview:one];
 }
 
@@ -59,11 +59,11 @@
     NSLog(@"点击切换主题");
     id <EUIThemeProtocol> theme = [EUIThemeManager sharedInstance].currentTheme;
     if ([theme.identifier isEqualToString:@"red"]) {
-        [[EUIThemeManager sharedInstance] applyTheme:[FDUIBlueTheme new]];
+        [[EUIThemeManager sharedInstance] applyTheme:[DUIThemeBlue new]];
     } else if ([theme.identifier isEqualToString:@"blue"]) {
-        [[EUIThemeManager sharedInstance] applyTheme:[FDUIRedTheme new]];
+        [[EUIThemeManager sharedInstance] applyTheme:[DUIThemeRed new]];
     } else {
-        [[EUIThemeManager sharedInstance] applyTheme:[FDUIBlueTheme new]];
+        [[EUIThemeManager sharedInstance] applyTheme:[DUIThemeBlue new]];
     }
 }
 

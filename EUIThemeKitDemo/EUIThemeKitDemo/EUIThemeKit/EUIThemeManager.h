@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  当前正在应用的主题
  */
-@property (nonatomic, strong, readonly) id <EUIThemeProtocol> currentTheme;
+@property (nonatomic, strong, readonly) NSObject <EUIThemeProtocol> *currentTheme;
 
 /*!
  单例调用

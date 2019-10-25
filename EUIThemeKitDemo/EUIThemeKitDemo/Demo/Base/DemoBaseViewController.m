@@ -1,16 +1,16 @@
 //
-//  FDBaseViewController.m
+//  DemoBaseViewController.m
 //  FrameWorksTest
 //
 //  Created by Lux on 2019/9/18.
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import "FDBaseViewController.h"
+#import "DemoBaseViewController.h"
 
-@interface FDBaseViewController()
+@interface DemoBaseViewController()
 @end
-@implementation FDBaseViewController
+@implementation DemoBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -11,11 +11,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CALayer (EUITheme)
-@end
-
 @interface UIView (EUITheme)
-- (void)eui_themeDidChange:(id)manager theme:(id <EUIThemeProtocol>)theme;
+
+/*!
+ UIView 收到主题更新的回调，可以继承该方法并在这个回调中处理自己的换肤逻辑
+ */
+- (void)eui_themeDidChange:(EUIThemeManager *)manager theme:(__kindof NSObject <EUIThemeProtocol> *)theme;
+
+/*!
+ 强制更新为当前的主题，会触发 eui_themeDidChange:theme: 方法回调；
+ */
+- (void)eui_updateThemeStyleIfNeeded;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,16 +1,16 @@
 //
-//  FDUIColorTest2View.h
+//  DemoUIButtonViewController.h
 //  EUIThemeKitDemo
 //
 //  Created by Lux on 2019/10/25.
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import "FDUIColorTestView.h"
-
+#import <UIKit/UIKit.h>
+#import "DemoBaseViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDUIColorTest2View : FDUIColorTestView
+@interface DemoUIButtonViewController : DemoBaseViewController
 
 @end
 

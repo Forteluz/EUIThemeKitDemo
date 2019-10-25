@@ -13,16 +13,21 @@
 
 - (void)eui_themeDidChange:(id)manager theme:(id <EUIThemeProtocol>)theme {
     NSArray *childs = self.childViewControllers;
-    [childs enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull childViewController, NSUInteger idx, BOOL * _Nonnull stop)
-    {
-        [childViewController eui_themeDidChange:manager theme:theme];
+    [childs enumerateObjectsUsingBlock:^(UIViewController *child, NSUInteger idx, BOOL *stop) {
+        [child eui_themeDidChange:manager theme:theme];
     }];
     
     if (self.presentedViewController &&
         self.presentedViewController.presentingViewController == self)
     {
         [self.presentedViewController eui_themeDidChange:manager theme:theme];
-        [self.presentedViewController.view eui_themeDidChange:manager theme:theme];
+        if ([self.presentedViewController isViewLoaded]) {
+            [self.presentedViewController.view eui_themeDidChange:manager theme:theme];
+        }
+    }
+    
+    if ([self isViewLoaded]) {
+        [self.view eui_themeDidChange:manager theme:theme];
     }
 }
 

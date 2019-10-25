@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "EUIThemeManager.h"
-#import "FDUITheme.h"
+#import "DUITheme.h"
 
 @interface AppDelegate ()
 @end
@@ -16,7 +16,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[EUIThemeManager sharedInstance] applyTheme:[FDUIRedTheme new]];
+    ///< 应用一个主题
+    [[EUIThemeManager sharedInstance] applyTheme:[DUIThemeRed new]];
+
     return YES;
 }
 

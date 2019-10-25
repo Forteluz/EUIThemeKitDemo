@@ -1,14 +1,14 @@
 //
-//  FDUIColorTest2View.m
+//  DUICustomChildView.m
 //  EUIThemeKitDemo
 //
 //  Created by Lux on 2019/10/25.
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import "FDUIColorTest2View.h"
+#import "DUICustomChildView.h"
 
-@implementation FDUIColorTest2View
+@implementation DUICustomChildView
 
 /*
 // Only override drawRect: if you perform custom drawing.

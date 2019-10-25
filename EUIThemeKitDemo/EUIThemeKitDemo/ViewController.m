@@ -1,6 +1,5 @@
 //
 //  ViewController.m
-//  FrameWorksTest
 //
 //  Created by Lux on 2019/9/18.
 //  Copyright © 2019 Lux. All rights reserved.
@@ -18,41 +17,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.title = @"EUIThemeKitDemo";
-    
-    if (!_tableView) {
-        UITableView *one = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-        [one setDelegate:self];
-        [one setDataSource:self];
-        [one registerClass:UITableViewCell.class forCellReuseIdentifier:@"kTableViewCell"];
-        [self.view addSubview:one];
-        [self setTableView:one];
-    }
-    
-    ///< Base Data
-    NSDictionary *UIKit = @
+    [self p_addTableView];
+
+    NSDictionary *systemUI = @
     {
-        @"name"  : @"UIKit",
-        @"items" : @[@"UIView", @"UIViewAnimation", @"UIWindow", @"UIAppearance", @"UILabel", @"UIColor"],
+        @"name"  : @"更换系统组件主题",
+        @"items" : @[@"UIButton", @"UILabel", @"UITableViewCell"],
     };
-    NSDictionary *QuartzCore = @
+    NSDictionary *customUI = @
     {
-        @"name"  : @"QuartzCore",
-        @"items" : @[@"CALayer", @"CoreAnimation", @"CAAnimation"]
-    };
-    NSDictionary *Runtime = @{};
-    NSDictionary *GCD = @{
-        @"name" : @"GCD",
-        @"items" : @[@"GCD"]
+        @"name"  : @"更换自定义组件主题",
+        @"items" : @[@"Custom"]
     };
     self.data = @[
-                  UIKit,
-                  QuartzCore,
-                  Runtime,
-                  GCD
+                  systemUI,
+                  customUI,
                   ];
 }
+
+#pragma mark - ---| UITableViewDelegate & UITableViewDataSource |---
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"kTableViewCell"];
@@ -78,25 +61,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *item = self.data[indexPath.section][@"items"][indexPath.row];
-    NSString *clsName = [NSString stringWithFormat:@"FD%@ViewController",item];
+    NSString *clsName = [NSString stringWithFormat:@"Demo%@ViewController",item];
     if (NSClassFromString(clsName)) {
         UIViewController *one = [[NSClassFromString(clsName) alloc] init];
         one.modalPresentationStyle = UIModalPresentationAutomatic;
-//        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:one];
-        [self presentViewController:one animated:YES completion:nil];
+        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:one];
+        [self presentViewController:navi animated:YES completion:nil];
     }
 }
 
-#pragma mark - ---| Subviews |---
+#pragma mark - ---| UI-Parts |---
 
-- (void)addTableViewIfNeeded {
-    if (self.tableView == nil) {
-        self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-        self.tableView.delegate = self;
-        self.tableView.dataSource = self;
-        [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"kTableViewCell"];
-        [self.view addSubview:self.tableView];
-    }
+- (void)p_addTableView {
+    UITableView *one = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    [one setDelegate:self];
+    [one setDataSource:self];
+    [one registerClass:UITableViewCell.class forCellReuseIdentifier:@"kTableViewCell"];
+    [self.view addSubview:one];
+    [self setTableView:one];
 }
 
 @end

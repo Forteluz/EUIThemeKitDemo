@@ -9,7 +9,7 @@
 #import "FDCaser.h"
 #import "FDHelper.h"
 
-@interface FDBaseViewController : UIViewController
+@interface DemoBaseViewController : UIViewController
 @property (nonatomic, strong) FDCaser  *caser;
 @property (nonatomic, strong) FDHelper *helper;
 @end

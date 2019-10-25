@@ -1,5 +1,5 @@
 //
-//  FDUIColorTestView.h
+//  DUICustomView.h
 //  FrameworksDemoProject
 //
 //  Created by Lux on 2019/10/23.
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  1、相关属性支持默认值重写；
  2、相关属性要保证调用 setter 时功能正常；
  */
-@interface FDUIColorTestView : UIView
+@interface DUICustomView : UIView
 @property (nonatomic, strong) UIColor *textColor UI_APPEARANCE_SELECTOR;
 @property (nonatomic, strong) UIFont  *textFont  UI_APPEARANCE_SELECTOR;
 @property (nonatomic, assign) UIEdgeInsets inner UI_APPEARANCE_SELECTOR;

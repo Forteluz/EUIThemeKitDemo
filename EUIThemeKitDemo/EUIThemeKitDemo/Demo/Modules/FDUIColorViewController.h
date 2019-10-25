@@ -6,11 +6,11 @@
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import "FDBaseViewController.h"
+#import "DemoBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDUIColorViewController : FDBaseViewController
+@interface FDUIColorViewController : DemoBaseViewController
 
 @end
 

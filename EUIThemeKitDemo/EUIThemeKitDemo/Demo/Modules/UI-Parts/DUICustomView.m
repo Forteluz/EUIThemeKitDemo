@@ -1,14 +1,14 @@
 //
-//  FDUIColorTestView.m
+//  DUICustomView.m
 //  FrameworksDemoProject
 //
 //  Created by Lux on 2019/10/23.
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import "FDUIColorTestView.h"
+#import "DUICustomView.h"
 
-@implementation FDUIColorTestView {
+@implementation DUICustomView {
     UILabel *_label;
 }
 
@@ -39,33 +39,29 @@
 }
 
 - (void)setTextFont:(UIFont *)textFont {
-    if (![_textFont isEqual:textFont]) {
-        _textFont = textFont;
-        if (_label) {
-            _label.font = textFont;
-        }
+    _textFont = textFont;
+    if (_label) {
+        _label.font = textFont;
     }
 }
 
 - (void)setTextColor:(UIColor *)textColor {
-    if (![_textColor isEqual:textColor]) {
-        _textColor = textColor;
-        if (_label) {
-            _label.textColor = textColor;
-        }
+    _textColor = textColor;
+    if (_label) {
+        _label.textColor = textColor;
     }
 }
 
 @end
 
-@implementation FDUIColorTestView(FDUIAppearance)
+@implementation DUICustomView(FDUIAppearance)
 
 + (void)initialize {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        FDUIColorTestView *one = [FDUIColorTestView appearance];
+        DUICustomView *one = [DUICustomView appearance];
         one.textFont = [UIFont systemFontOfSize:20];
-        one.textColor = [UIColor redColor];
+        one.textColor = [UIColor blackColor];
         one.inner = UIEdgeInsetsMake(10, 10, 10, 10);
     });
 }

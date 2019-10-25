@@ -16,22 +16,23 @@
 		D554E5262361DE390047657B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E5252361DE390047657B /* main.m */; };
 		D554E5302361DE390047657B /* EUIThemeKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E52F2361DE390047657B /* EUIThemeKitDemoTests.m */; };
 		D554E53B2361DE390047657B /* EUIThemeKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E53A2361DE390047657B /* EUIThemeKitDemoUITests.m */; };
-		D554E5552361DE570047657B /* UIView+EUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E54A2361DE560047657B /* UIView+EUITheme.m */; };
-		D554E5562361DE570047657B /* EUIDynamicColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E54B2361DE560047657B /* EUIDynamicColor.m */; };
-		D554E5572361DE570047657B /* EUIDynamicAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E54F2361DE560047657B /* EUIDynamicAppearance.m */; };
-		D554E5582361DE570047657B /* EUIThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E5522361DE570047657B /* EUIThemeManager.m */; };
-		D554E5592361DE570047657B /* NSObject+EUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E5532361DE570047657B /* NSObject+EUITheme.m */; };
-		D554E55C2361DE860047657B /* EUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E55A2361DE850047657B /* EUIHelper.m */; };
-		D554E5662361DF930047657B /* FDUIColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E55E2361DF920047657B /* FDUIColorViewController.m */; };
-		D554E5672361DF930047657B /* FDUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E5632361DF930047657B /* FDUITheme.m */; };
-		D554E5682361DF930047657B /* FDUIColorTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E5642361DF930047657B /* FDUIColorTestView.m */; };
-		D554E5692361DF930047657B /* FDUIColorTemplet.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E5652361DF930047657B /* FDUIColorTemplet.m */; };
-		D554E5732361DF9B0047657B /* FDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E56B2361DF9B0047657B /* FDBaseViewController.m */; };
-		D554E5742361DF9B0047657B /* FDBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E56C2361DF9B0047657B /* FDBaseView.m */; };
-		D554E5752361DF9B0047657B /* FDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E56E2361DF9B0047657B /* FDHelper.m */; };
-		D554E5762361DF9B0047657B /* FDCaser.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E5722361DF9B0047657B /* FDCaser.m */; };
-		D554E57B2361E5E10047657B /* UIViewController+EUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E57A2361E5E10047657B /* UIViewController+EUITheme.m */; };
-		D554E57F236208DA0047657B /* FDUIColorTest2View.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E57E236208DA0047657B /* FDUIColorTest2View.m */; };
+		D5FF725323631B1600A5732C /* EUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF722723631B1600A5732C /* EUIAppearance.m */; };
+		D5FF725423631B1600A5732C /* UIViewController+EUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF722B23631B1600A5732C /* UIViewController+EUITheme.m */; };
+		D5FF725523631B1600A5732C /* NSObject+EUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF722D23631B1600A5732C /* NSObject+EUITheme.m */; };
+		D5FF725623631B1600A5732C /* EUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF722F23631B1600A5732C /* EUIHelper.m */; };
+		D5FF725723631B1600A5732C /* UIView+EUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF723123631B1600A5732C /* UIView+EUITheme.m */; };
+		D5FF725823631B1600A5732C /* EUIDynamicColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF723423631B1600A5732C /* EUIDynamicColor.m */; };
+		D5FF725923631B1600A5732C /* EUIThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF723623631B1600A5732C /* EUIThemeManager.m */; };
+		D5FF725A23631B1600A5732C /* DemoUIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF723C23631B1600A5732C /* DemoUIButtonViewController.m */; };
+		D5FF725B23631B1600A5732C /* DUICustomChildView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF723F23631B1600A5732C /* DUICustomChildView.m */; };
+		D5FF725C23631B1600A5732C /* DUICustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF724023631B1600A5732C /* DUICustomView.m */; };
+		D5FF725D23631B1600A5732C /* FDUIColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF724323631B1600A5732C /* FDUIColorViewController.m */; };
+		D5FF725E23631B1600A5732C /* DUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF724823631B1600A5732C /* DUITheme.m */; };
+		D5FF725F23631B1600A5732C /* DUIThemeTemplet.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF724923631B1600A5732C /* DUIThemeTemplet.m */; };
+		D5FF726023631B1600A5732C /* DemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF724B23631B1600A5732C /* DemoBaseViewController.m */; };
+		D5FF726123631B1600A5732C /* FDBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF724C23631B1600A5732C /* FDBaseView.m */; };
+		D5FF726223631B1600A5732C /* FDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF724E23631B1600A5732C /* FDHelper.m */; };
+		D5FF726323631B1600A5732C /* FDCaser.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF725223631B1600A5732C /* FDCaser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,40 +71,42 @@
 		D554E5362361DE390047657B /* EUIThemeKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EUIThemeKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D554E53A2361DE390047657B /* EUIThemeKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUIThemeKitDemoUITests.m; sourceTree = "<group>"; };
 		D554E53C2361DE390047657B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D554E5492361DE560047657B /* EUIDynamicColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIDynamicColor.h; sourceTree = "<group>"; };
-		D554E54A2361DE560047657B /* UIView+EUITheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EUITheme.m"; sourceTree = "<group>"; };
-		D554E54B2361DE560047657B /* EUIDynamicColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIDynamicColor.m; sourceTree = "<group>"; };
-		D554E54C2361DE560047657B /* EUIThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIThemeManager.h; sourceTree = "<group>"; };
-		D554E54D2361DE560047657B /* UIView+EUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EUITheme.h"; sourceTree = "<group>"; };
-		D554E54E2361DE560047657B /* NSObject+EUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EUITheme.h"; sourceTree = "<group>"; };
-		D554E54F2361DE560047657B /* EUIDynamicAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIDynamicAppearance.m; sourceTree = "<group>"; };
-		D554E5502361DE560047657B /* EUIThemeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIThemeProtocol.h; sourceTree = "<group>"; };
-		D554E5512361DE570047657B /* EUIDynamicAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIDynamicAppearance.h; sourceTree = "<group>"; };
-		D554E5522361DE570047657B /* EUIThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIThemeManager.m; sourceTree = "<group>"; };
-		D554E5532361DE570047657B /* NSObject+EUITheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EUITheme.m"; sourceTree = "<group>"; };
-		D554E5542361DE570047657B /* EUIThemeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIThemeKit.h; sourceTree = "<group>"; };
-		D554E55A2361DE850047657B /* EUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIHelper.m; sourceTree = "<group>"; };
-		D554E55B2361DE860047657B /* EUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIHelper.h; sourceTree = "<group>"; };
-		D554E55E2361DF920047657B /* FDUIColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUIColorViewController.m; sourceTree = "<group>"; };
-		D554E55F2361DF920047657B /* FDUIColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUIColorViewController.h; sourceTree = "<group>"; };
-		D554E5602361DF920047657B /* FDUIColorTemplet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUIColorTemplet.h; sourceTree = "<group>"; };
-		D554E5612361DF920047657B /* FDUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUITheme.h; sourceTree = "<group>"; };
-		D554E5622361DF930047657B /* FDUIColorTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUIColorTestView.h; sourceTree = "<group>"; };
-		D554E5632361DF930047657B /* FDUITheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUITheme.m; sourceTree = "<group>"; };
-		D554E5642361DF930047657B /* FDUIColorTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUIColorTestView.m; sourceTree = "<group>"; };
-		D554E5652361DF930047657B /* FDUIColorTemplet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUIColorTemplet.m; sourceTree = "<group>"; };
-		D554E56B2361DF9B0047657B /* FDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseViewController.m; sourceTree = "<group>"; };
-		D554E56C2361DF9B0047657B /* FDBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseView.m; sourceTree = "<group>"; };
-		D554E56D2361DF9B0047657B /* FDCaser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCaser.h; sourceTree = "<group>"; };
-		D554E56E2361DF9B0047657B /* FDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDHelper.m; sourceTree = "<group>"; };
-		D554E56F2361DF9B0047657B /* FDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBaseViewController.h; sourceTree = "<group>"; };
-		D554E5702361DF9B0047657B /* FDBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBaseView.h; sourceTree = "<group>"; };
-		D554E5712361DF9B0047657B /* FDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDHelper.h; sourceTree = "<group>"; };
-		D554E5722361DF9B0047657B /* FDCaser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCaser.m; sourceTree = "<group>"; };
-		D554E5792361E5E10047657B /* UIViewController+EUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EUITheme.h"; sourceTree = "<group>"; };
-		D554E57A2361E5E10047657B /* UIViewController+EUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EUITheme.m"; sourceTree = "<group>"; };
-		D554E57D236208DA0047657B /* FDUIColorTest2View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIColorTest2View.h; sourceTree = "<group>"; };
-		D554E57E236208DA0047657B /* FDUIColorTest2View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIColorTest2View.m; sourceTree = "<group>"; };
+		D5FF722723631B1600A5732C /* EUIAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIAppearance.m; sourceTree = "<group>"; };
+		D5FF722823631B1600A5732C /* EUIDynamicColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIDynamicColor.h; sourceTree = "<group>"; };
+		D5FF722923631B1600A5732C /* EUIThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIThemeManager.h; sourceTree = "<group>"; };
+		D5FF722B23631B1600A5732C /* UIViewController+EUITheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EUITheme.m"; sourceTree = "<group>"; };
+		D5FF722C23631B1600A5732C /* EUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIHelper.h; sourceTree = "<group>"; };
+		D5FF722D23631B1600A5732C /* NSObject+EUITheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EUITheme.m"; sourceTree = "<group>"; };
+		D5FF722E23631B1600A5732C /* UIView+EUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EUITheme.h"; sourceTree = "<group>"; };
+		D5FF722F23631B1600A5732C /* EUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIHelper.m; sourceTree = "<group>"; };
+		D5FF723023631B1600A5732C /* UIViewController+EUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EUITheme.h"; sourceTree = "<group>"; };
+		D5FF723123631B1600A5732C /* UIView+EUITheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EUITheme.m"; sourceTree = "<group>"; };
+		D5FF723223631B1600A5732C /* NSObject+EUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EUITheme.h"; sourceTree = "<group>"; };
+		D5FF723323631B1600A5732C /* EUIThemeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIThemeKit.h; sourceTree = "<group>"; };
+		D5FF723423631B1600A5732C /* EUIDynamicColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIDynamicColor.m; sourceTree = "<group>"; };
+		D5FF723523631B1600A5732C /* EUIAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIAppearance.h; sourceTree = "<group>"; };
+		D5FF723623631B1600A5732C /* EUIThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIThemeManager.m; sourceTree = "<group>"; };
+		D5FF723723631B1600A5732C /* EUIThemeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIThemeProtocol.h; sourceTree = "<group>"; };
+		D5FF723C23631B1600A5732C /* DemoUIButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUIButtonViewController.m; sourceTree = "<group>"; };
+		D5FF723D23631B1600A5732C /* DemoUIButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUIButtonViewController.h; sourceTree = "<group>"; };
+		D5FF723F23631B1600A5732C /* DUICustomChildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUICustomChildView.m; sourceTree = "<group>"; };
+		D5FF724023631B1600A5732C /* DUICustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUICustomView.m; sourceTree = "<group>"; };
+		D5FF724123631B1600A5732C /* DUICustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUICustomView.h; sourceTree = "<group>"; };
+		D5FF724223631B1600A5732C /* DUICustomChildView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUICustomChildView.h; sourceTree = "<group>"; };
+		D5FF724323631B1600A5732C /* FDUIColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUIColorViewController.m; sourceTree = "<group>"; };
+		D5FF724423631B1600A5732C /* FDUIColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUIColorViewController.h; sourceTree = "<group>"; };
+		D5FF724623631B1600A5732C /* DUIThemeTemplet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIThemeTemplet.h; sourceTree = "<group>"; };
+		D5FF724723631B1600A5732C /* DUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUITheme.h; sourceTree = "<group>"; };
+		D5FF724823631B1600A5732C /* DUITheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUITheme.m; sourceTree = "<group>"; };
+		D5FF724923631B1600A5732C /* DUIThemeTemplet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIThemeTemplet.m; sourceTree = "<group>"; };
+		D5FF724B23631B1600A5732C /* DemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBaseViewController.m; sourceTree = "<group>"; };
+		D5FF724C23631B1600A5732C /* FDBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseView.m; sourceTree = "<group>"; };
+		D5FF724D23631B1600A5732C /* FDCaser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCaser.h; sourceTree = "<group>"; };
+		D5FF724E23631B1600A5732C /* FDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDHelper.m; sourceTree = "<group>"; };
+		D5FF724F23631B1600A5732C /* FDBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBaseView.h; sourceTree = "<group>"; };
+		D5FF725023631B1600A5732C /* DemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBaseViewController.h; sourceTree = "<group>"; };
+		D5FF725123631B1600A5732C /* FDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDHelper.h; sourceTree = "<group>"; };
+		D5FF725223631B1600A5732C /* FDCaser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCaser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +157,8 @@
 		D554E5122361DE380047657B /* EUIThemeKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D554E5482361DE410047657B /* EUIThemeKit */,
-				D554E55D2361DF670047657B /* Demo */,
+				D5FF723823631B1600A5732C /* Demo */,
+				D5FF722623631B1600A5732C /* EUIThemeKit */,
 				D554E5132361DE380047657B /* AppDelegate.h */,
 				D554E5142361DE380047657B /* AppDelegate.m */,
 				D554E5162361DE380047657B /* SceneDelegate.h */,
@@ -189,68 +192,110 @@
 			path = EUIThemeKitDemoUITests;
 			sourceTree = "<group>";
 		};
-		D554E5482361DE410047657B /* EUIThemeKit */ = {
+		D5FF722623631B1600A5732C /* EUIThemeKit */ = {
 			isa = PBXGroup;
 			children = (
-				D554E5772361E4250047657B /* internal */,
-				D554E5542361DE570047657B /* EUIThemeKit.h */,
-				D554E5502361DE560047657B /* EUIThemeProtocol.h */,
-				D554E5492361DE560047657B /* EUIDynamicColor.h */,
-				D554E54B2361DE560047657B /* EUIDynamicColor.m */,
-				D554E54C2361DE560047657B /* EUIThemeManager.h */,
-				D554E5522361DE570047657B /* EUIThemeManager.m */,
-				D554E5512361DE570047657B /* EUIDynamicAppearance.h */,
-				D554E54F2361DE560047657B /* EUIDynamicAppearance.m */,
+				D5FF722723631B1600A5732C /* EUIAppearance.m */,
+				D5FF722823631B1600A5732C /* EUIDynamicColor.h */,
+				D5FF722923631B1600A5732C /* EUIThemeManager.h */,
+				D5FF722A23631B1600A5732C /* internal */,
+				D5FF723323631B1600A5732C /* EUIThemeKit.h */,
+				D5FF723423631B1600A5732C /* EUIDynamicColor.m */,
+				D5FF723523631B1600A5732C /* EUIAppearance.h */,
+				D5FF723623631B1600A5732C /* EUIThemeManager.m */,
+				D5FF723723631B1600A5732C /* EUIThemeProtocol.h */,
 			);
 			path = EUIThemeKit;
 			sourceTree = "<group>";
 		};
-		D554E55D2361DF670047657B /* Demo */ = {
+		D5FF722A23631B1600A5732C /* internal */ = {
 			isa = PBXGroup;
 			children = (
-				D554E56A2361DF9B0047657B /* Base */,
-				D554E55F2361DF920047657B /* FDUIColorViewController.h */,
-				D554E55E2361DF920047657B /* FDUIColorViewController.m */,
-				D554E5602361DF920047657B /* FDUIColorTemplet.h */,
-				D554E5652361DF930047657B /* FDUIColorTemplet.m */,
-				D554E5612361DF920047657B /* FDUITheme.h */,
-				D554E5632361DF930047657B /* FDUITheme.m */,
-				D554E5622361DF930047657B /* FDUIColorTestView.h */,
-				D554E5642361DF930047657B /* FDUIColorTestView.m */,
-				D554E57D236208DA0047657B /* FDUIColorTest2View.h */,
-				D554E57E236208DA0047657B /* FDUIColorTest2View.m */,
+				D5FF722B23631B1600A5732C /* UIViewController+EUITheme.m */,
+				D5FF722C23631B1600A5732C /* EUIHelper.h */,
+				D5FF722D23631B1600A5732C /* NSObject+EUITheme.m */,
+				D5FF722E23631B1600A5732C /* UIView+EUITheme.h */,
+				D5FF722F23631B1600A5732C /* EUIHelper.m */,
+				D5FF723023631B1600A5732C /* UIViewController+EUITheme.h */,
+				D5FF723123631B1600A5732C /* UIView+EUITheme.m */,
+				D5FF723223631B1600A5732C /* NSObject+EUITheme.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		D5FF723823631B1600A5732C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D5FF723923631B1600A5732C /* Modules */,
+				D5FF724523631B1600A5732C /* Themes */,
+				D5FF724A23631B1600A5732C /* Base */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
 		};
-		D554E56A2361DF9B0047657B /* Base */ = {
+		D5FF723923631B1600A5732C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				D554E56F2361DF9B0047657B /* FDBaseViewController.h */,
-				D554E56B2361DF9B0047657B /* FDBaseViewController.m */,
-				D554E5702361DF9B0047657B /* FDBaseView.h */,
-				D554E56C2361DF9B0047657B /* FDBaseView.m */,
-				D554E5712361DF9B0047657B /* FDHelper.h */,
-				D554E56E2361DF9B0047657B /* FDHelper.m */,
-				D554E56D2361DF9B0047657B /* FDCaser.h */,
-				D554E5722361DF9B0047657B /* FDCaser.m */,
+				D5FF723A23631B1600A5732C /* UILabel */,
+				D5FF723B23631B1600A5732C /* UIButton */,
+				D5FF723E23631B1600A5732C /* UI-Parts */,
+				D5FF724323631B1600A5732C /* FDUIColorViewController.m */,
+				D5FF724423631B1600A5732C /* FDUIColorViewController.h */,
 			);
-			path = Base;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		D554E5772361E4250047657B /* internal */ = {
+		D5FF723A23631B1600A5732C /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				D554E55B2361DE860047657B /* EUIHelper.h */,
-				D554E55A2361DE850047657B /* EUIHelper.m */,
-				D554E54D2361DE560047657B /* UIView+EUITheme.h */,
-				D554E54A2361DE560047657B /* UIView+EUITheme.m */,
-				D554E54E2361DE560047657B /* NSObject+EUITheme.h */,
-				D554E5532361DE570047657B /* NSObject+EUITheme.m */,
-				D554E5792361E5E10047657B /* UIViewController+EUITheme.h */,
-				D554E57A2361E5E10047657B /* UIViewController+EUITheme.m */,
 			);
-			path = internal;
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		D5FF723B23631B1600A5732C /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				D5FF723C23631B1600A5732C /* DemoUIButtonViewController.m */,
+				D5FF723D23631B1600A5732C /* DemoUIButtonViewController.h */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		D5FF723E23631B1600A5732C /* UI-Parts */ = {
+			isa = PBXGroup;
+			children = (
+				D5FF723F23631B1600A5732C /* DUICustomChildView.m */,
+				D5FF724023631B1600A5732C /* DUICustomView.m */,
+				D5FF724123631B1600A5732C /* DUICustomView.h */,
+				D5FF724223631B1600A5732C /* DUICustomChildView.h */,
+			);
+			path = "UI-Parts";
+			sourceTree = "<group>";
+		};
+		D5FF724523631B1600A5732C /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				D5FF724623631B1600A5732C /* DUIThemeTemplet.h */,
+				D5FF724723631B1600A5732C /* DUITheme.h */,
+				D5FF724823631B1600A5732C /* DUITheme.m */,
+				D5FF724923631B1600A5732C /* DUIThemeTemplet.m */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		D5FF724A23631B1600A5732C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D5FF724B23631B1600A5732C /* DemoBaseViewController.m */,
+				D5FF724C23631B1600A5732C /* FDBaseView.m */,
+				D5FF724D23631B1600A5732C /* FDCaser.h */,
+				D5FF724E23631B1600A5732C /* FDHelper.m */,
+				D5FF724F23631B1600A5732C /* FDBaseView.h */,
+				D5FF725023631B1600A5732C /* DemoBaseViewController.h */,
+				D5FF725123631B1600A5732C /* FDHelper.h */,
+				D5FF725223631B1600A5732C /* FDCaser.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,26 +428,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D554E5662361DF930047657B /* FDUIColorViewController.m in Sources */,
+				D5FF725B23631B1600A5732C /* DUICustomChildView.m in Sources */,
+				D5FF725F23631B1600A5732C /* DUIThemeTemplet.m in Sources */,
+				D5FF725523631B1600A5732C /* NSObject+EUITheme.m in Sources */,
+				D5FF726223631B1600A5732C /* FDHelper.m in Sources */,
+				D5FF725A23631B1600A5732C /* DemoUIButtonViewController.m in Sources */,
+				D5FF725623631B1600A5732C /* EUIHelper.m in Sources */,
+				D5FF725923631B1600A5732C /* EUIThemeManager.m in Sources */,
+				D5FF726023631B1600A5732C /* DemoBaseViewController.m in Sources */,
+				D5FF725423631B1600A5732C /* UIViewController+EUITheme.m in Sources */,
+				D5FF725C23631B1600A5732C /* DUICustomView.m in Sources */,
+				D5FF726123631B1600A5732C /* FDBaseView.m in Sources */,
 				D554E51B2361DE380047657B /* ViewController.m in Sources */,
-				D554E5592361DE570047657B /* NSObject+EUITheme.m in Sources */,
-				D554E57F236208DA0047657B /* FDUIColorTest2View.m in Sources */,
-				D554E5552361DE570047657B /* UIView+EUITheme.m in Sources */,
-				D554E5732361DF9B0047657B /* FDBaseViewController.m in Sources */,
 				D554E5152361DE380047657B /* AppDelegate.m in Sources */,
-				D554E5572361DE570047657B /* EUIDynamicAppearance.m in Sources */,
-				D554E57B2361E5E10047657B /* UIViewController+EUITheme.m in Sources */,
-				D554E5742361DF9B0047657B /* FDBaseView.m in Sources */,
-				D554E5762361DF9B0047657B /* FDCaser.m in Sources */,
-				D554E5682361DF930047657B /* FDUIColorTestView.m in Sources */,
-				D554E5562361DE570047657B /* EUIDynamicColor.m in Sources */,
-				D554E5582361DE570047657B /* EUIThemeManager.m in Sources */,
+				D5FF725D23631B1600A5732C /* FDUIColorViewController.m in Sources */,
+				D5FF726323631B1600A5732C /* FDCaser.m in Sources */,
+				D5FF725E23631B1600A5732C /* DUITheme.m in Sources */,
+				D5FF725323631B1600A5732C /* EUIAppearance.m in Sources */,
 				D554E5262361DE390047657B /* main.m in Sources */,
-				D554E5752361DF9B0047657B /* FDHelper.m in Sources */,
-				D554E5672361DF930047657B /* FDUITheme.m in Sources */,
-				D554E5692361DF930047657B /* FDUIColorTemplet.m in Sources */,
-				D554E55C2361DE860047657B /* EUIHelper.m in Sources */,
+				D5FF725823631B1600A5732C /* EUIDynamicColor.m in Sources */,
 				D554E5182361DE380047657B /* SceneDelegate.m in Sources */,
+				D5FF725723631B1600A5732C /* UIView+EUITheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

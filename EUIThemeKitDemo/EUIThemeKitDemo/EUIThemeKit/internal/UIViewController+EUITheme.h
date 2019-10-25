@@ -11,6 +11,9 @@
 
 @interface UIViewController (EUITheme)
 
-- (void)eui_themeDidChange:(id)manager theme:(id <EUIThemeProtocol>)theme;
+/*!
+ 
+ */
+- (void)eui_themeDidChange:(EUIThemeManager *)manager theme:(__kindof NSObject <EUIThemeProtocol> *)theme;
 
 @end

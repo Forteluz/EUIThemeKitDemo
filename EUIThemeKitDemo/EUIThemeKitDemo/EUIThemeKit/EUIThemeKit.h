@@ -11,7 +11,7 @@
 
 #import "EUIThemeManager.h"
 #import "EUIDynamicColor.h"
-#import "EUIDynamicAppearance.h"
+#import "EUIAppearance.h"
 
 #import "UIView+EUITheme.h"
 #import "UIViewController+EUITheme.h"

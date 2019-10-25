@@ -9,12 +9,13 @@
 #import "UIView+EUITheme.h"
 #import "EUIThemeManager.h"
 #import "NSObject+EUITheme.h"
-#import "EUIDynamicAppearance.h"
+#import "EUIAppearance.h"
 #import "EUIHelper.h"
 
 static const void *kFDBackgroundColorKey = &kFDBackgroundColorKey;
 static const void *kFDBorderColorKey = &kFDBorderColorKey;
 
+@interface CALayer (EUITheme) @end
 @implementation CALayer(EUITheme)
 
 - (void)fd_setOriginBackgroundColor:(UIColor *)fd_backgroundColor {
@@ -91,17 +92,29 @@ static const void *kFDBorderColorKey = &kFDBorderColorKey;
     [self fd_setBackgroundColor:color];
 }
 
-- (void)eui_themeDidChange:(id)manager theme:(id <EUIThemeProtocol>)theme {
+- (void)eui_themeDidChange:(EUIThemeManager *)manager theme:(__kindof NSObject <EUIThemeProtocol> *)theme {
+    /*!
+     视图树开始递归换肤
+     */
     NSArray *subviews = [self subviews];
     [subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
         [obj eui_themeDidChange:manager theme:theme];
     }];
-    [self eui_invokeEUIAppearanceSelectors];
- 
+    
+    /*!
+     自动调用 EUIAppearance
+     */
+    [self eui_invokeSelectors];
+    
     [CATransaction begin];
     [CATransaction setDisableActions:YES];
     [self.layer fd_displayIfNeeded];
     [CATransaction commit];
+}
+
+- (void)eui_updateThemeStyleIfNeeded {
+    EUIThemeManager *one = [EUIThemeManager sharedInstance];
+    [self eui_themeDidChange:one theme:one.currentTheme];
 }
 
 @end

@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 ///< Base Class
-@interface FDUITheme : NSObject <EUIThemeProtocol>
+@interface DUITheme : NSObject <EUIThemeProtocol>
 - (UIColor *)fd_primaryColor;
 - (UIColor *)fd_secondaryColor;
 - (UIColor *)fd_textColor;
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIEdgeInsets)fd_insets;
 @end
 
-@interface FDUIRedTheme  : FDUITheme @end
-@interface FDUIBlueTheme : FDUITheme @end
+@interface DUIThemeRed  : DUITheme @end
+@interface DUIThemeBlue : DUITheme @end
 
 NS_ASSUME_NONNULL_END
