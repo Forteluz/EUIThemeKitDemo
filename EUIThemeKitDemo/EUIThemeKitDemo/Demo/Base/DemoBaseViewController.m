@@ -7,16 +7,22 @@
 //
 
 #import "DemoBaseViewController.h"
+#import "DemoThemeViewController.h"
 
 @interface DemoBaseViewController()
 @end
 @implementation DemoBaseViewController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.caser = [[FDCaser alloc] init];
-    self.helper = [[FDHelper alloc] init];
+    [self.view setBackgroundColor:UIColor.whiteColor];
 }
 
 @end

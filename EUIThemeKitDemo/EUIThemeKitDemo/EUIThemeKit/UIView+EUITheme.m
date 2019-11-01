@@ -14,6 +14,7 @@
 
 static const void *kFDBackgroundColorKey = &kFDBackgroundColorKey;
 static const void *kFDBorderColorKey = &kFDBorderColorKey;
+static const void *kFDViewThemeBlockKey = &kFDViewThemeBlockKey;
 
 @interface CALayer (EUITheme) @end
 @implementation CALayer(EUITheme)
@@ -84,7 +85,24 @@ static const void *kFDBorderColorKey = &kFDBorderColorKey;
         [EUIHelper hookClass:UIView.class
                 fromSelector:@selector(setBackgroundColor:)
                   toSelector:@selector(fd_setBackgroundColor:)];
+        [EUIHelper hookClass:UIView.class
+                fromSelector:@selector(didMoveToWindow)
+                  toSelector:@selector(eui_themeViewDidMoveToWindow)];
     });
+}
+
+- (void)setEui_themeDidChange:(void (^)(__kindof UIView * _Nonnull, EUIThemeManager * _Nonnull))eui_themeDidChange {
+    objc_setAssociatedObject(self, kFDViewThemeBlockKey, eui_themeDidChange, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (void (^)(UIView * _Nonnull, EUIThemeManager * _Nonnull))eui_themeDidChange {
+    
+    return objc_getAssociatedObject(self, kFDViewThemeBlockKey);
+}
+
+- (void)eui_themeViewDidMoveToWindow {
+    [self eui_themeViewDidMoveToWindow];
+    NSLog(@"eui_themeViewDidMoveToWindow:%@",self);
 }
 
 - (void)fd_setBackgroundColor:(UIColor *)color {
@@ -102,9 +120,16 @@ static const void *kFDBorderColorKey = &kFDBorderColorKey;
     }];
     
     /*!
-     自动调用 EUIAppearance
+     调用 EUIAppearance 注册的 setters
      */
-    [self eui_invokeSelectors];
+    [self eui_makeDynamicAppearance];
+    
+    /*!
+     如果有其他自定义逻辑，走一下
+     */
+    if (self.eui_themeDidChange) {
+        self.eui_themeDidChange(self, manager);
+    }
     
     [CATransaction begin];
     [CATransaction setDisableActions:YES];

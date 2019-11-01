@@ -25,10 +25,11 @@
             [self.presentedViewController.view eui_themeDidChange:manager theme:theme];
         }
     }
-    
-    if ([self isViewLoaded]) {
-        [self.view eui_themeDidChange:manager theme:theme];
-    }
+}
+
+- (void)eui_updateThemeStyleIfNeeded {
+    EUIThemeManager *one = [EUIThemeManager sharedInstance];
+    [self eui_themeDidChange:one theme:one.currentTheme];
 }
 
 @end

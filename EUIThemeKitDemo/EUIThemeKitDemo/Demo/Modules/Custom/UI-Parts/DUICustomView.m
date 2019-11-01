@@ -52,6 +52,13 @@
     }
 }
 
+- (void)setTitle:(NSString *)title {
+    _title = title;
+    if (_label) {
+        _label.text = title;
+    }
+}
+
 @end
 
 @implementation DUICustomView(FDUIAppearance)
@@ -63,6 +70,7 @@
         one.textFont = [UIFont systemFontOfSize:20];
         one.textColor = [UIColor blackColor];
         one.inner = UIEdgeInsetsMake(10, 10, 10, 10);
+        one.backgroundColor = [UIColor grayColor];
     });
 }
 

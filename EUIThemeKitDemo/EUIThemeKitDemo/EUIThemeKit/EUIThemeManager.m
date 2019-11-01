@@ -40,6 +40,9 @@ NSString *const FDUIThemeDidChangeNotification = @"FDUIThemeDidChangeNotificatio
         if ( isShowing ) {
             UIViewController *controller = window.rootViewController;
             [controller eui_themeDidChange:self theme:self.currentTheme];
+            if ([controller isViewLoaded]) {
+                [controller.view eui_themeDidChange:self theme:self.currentTheme];
+            }
         }
     }];
 }

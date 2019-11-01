@@ -18,6 +18,6 @@
 /*!
  仿照系统接口，提供主题色生成器
  */
-+ (UIColor *)eui_colorWithProvider:(UIColor *(^)(EUIThemeManager *))provider;
++ (UIColor *)eui_colorWithProvider:(UIColor *(^)(EUIThemeManager *manager))provider;
 
 @end

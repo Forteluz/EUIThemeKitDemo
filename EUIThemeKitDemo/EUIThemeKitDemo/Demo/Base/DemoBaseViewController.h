@@ -6,11 +6,8 @@
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import "FDCaser.h"
-#import "FDHelper.h"
+#import <UIKit/UIKit.h>
 
 @interface DemoBaseViewController : UIViewController
-@property (nonatomic, strong) FDCaser  *caser;
-@property (nonatomic, strong) FDHelper *helper;
 @end
 

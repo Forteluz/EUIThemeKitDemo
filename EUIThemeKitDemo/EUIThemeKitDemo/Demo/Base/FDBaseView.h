@@ -18,8 +18,8 @@
 
 @property (nonatomic, copy) void (^layoutSubviewsBlock)(FDBaseView *hi);
 
-- (UIView *)subviewByIdentifier:(NSString *)identifier;
-
 @property (nonatomic, strong) UIColor *highlightColor UI_APPEARANCE_SELECTOR;
+
+- (UIView *)subviewByIdentifier:(NSString *)identifier;
 
 @end

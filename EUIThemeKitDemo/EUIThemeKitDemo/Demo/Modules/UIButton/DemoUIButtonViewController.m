@@ -14,22 +14,65 @@
 
 @implementation DemoUIButtonViewController
 
++ (void)initialize {
+    [self configuration];
+}
+
++ (void)configuration {
+    UIButton *one = [UIButton eui_appearance];
+    [one setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *one = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    one.appearanceIdentifier = @"";
-    [one setFrame:CGRectMake(10, 44 + 20, self.view.bounds.size.width - 20, 50)];
-    [one setTitle:@"点击更新所有的 UIButton 样式" forState:UIControlStateNormal];
-    [one addTarget:self action:@selector(tapAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:one];
+    [self setTitle:@"UIButton"];
+    
+    NSArray <NSString *> *titles = @[
+        @"设置 UIButton 标题默认色为棕色(Brown)",
+        @"设置 UIButton 标题默认色为蓝色(Blue)",
+        @"设置 UIButton 背景默认色是灰色(Gray)",
+        @"设置 UIButton 背景默认色是空(Clear)"
+    ];
+    
+    __block CGRect r = CGRectMake(10, 44 + 20, self.view.bounds.size.width - 20, 50);
+    [titles enumerateObjectsUsingBlock:^(NSString *title, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIButton *one = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [one setFrame:r];
+        [one setTitle:title forState:UIControlStateNormal];
+        SEL sel = NSSelectorFromString([NSString stringWithFormat:@"tap%@", @(idx + 1)]);
+        [one addTarget:self action:sel forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:one];
+        r.origin.y = CGRectGetMaxY(r) + 10;
+    }];
 }
 
-- (void)tapAction {
-    UIButton *button = [UIButton eui_appearance];
-    button.appearanceIdentifier = @"";
-    [button setTitleColor:UIColor.redColor forState:UIControlStateNormal];
-    [self.view eui_updateThemeStyleIfNeeded];
+- (void)tap1 {
+    UIButton *one = [UIButton eui_appearance];
+    [one setTitleColor:UIColor.brownColor forState:UIControlStateNormal];
+    [self eui_updateThemeStyleIfNeeded];
+}
+
+- (void)tap2 {
+    UIButton *one = [UIButton eui_appearance];
+    [one setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
+    [self eui_updateThemeStyleIfNeeded];
+}
+
+- (void)tap3 {
+    UIButton *one = [UIButton eui_appearance];
+    [one setBackgroundColor:UIColor.grayColor];
+    [self eui_updateThemeStyleIfNeeded];
+}
+
+- (void)tap4 {
+    UIButton *one = [UIButton eui_appearance];
+    [one setBackgroundColor:UIColor.clearColor];
+    [self eui_updateThemeStyleIfNeeded];
+}
+
+- (void)eui_themeDidChange:(EUIThemeManager *)manager theme:(__kindof NSObject<EUIThemeProtocol> *)theme {
+    [super eui_themeDidChange:manager theme:theme];
 }
 
 @end
