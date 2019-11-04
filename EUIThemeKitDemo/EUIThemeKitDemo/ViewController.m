@@ -6,7 +6,6 @@
 //
 
 #import "ViewController.h"
-#import "FDUIColorViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;

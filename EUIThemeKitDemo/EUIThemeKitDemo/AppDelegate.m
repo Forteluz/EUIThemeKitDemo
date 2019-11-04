@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "EUIThemeManager.h"
-#import "DUITheme.h"
+#import "DemoThemeTemplet.h"
+#import "DemoSystemUIThemeTemplet.h"
 
 @interface AppDelegate ()
 @end
@@ -16,12 +17,20 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ///< 应用一个主题
-    [[EUIThemeManager sharedInstance] applyTheme:[DUIThemeRed new]];
-
+    [self registerTheme];
     return YES;
 }
 
+- (void)registerTheme {
+    ///< 应用一套配置自定义 UI 的模板配置
+    [DemoThemeTemplet applyThemeTempletConfiguration];
+
+    ///< 应用一套配置系统 UI 的模板配置
+    [DemoSystemUIThemeTemplet applyThemeTempletConfiguration];
+    
+    ///< 注册一个主题
+    [[EUIThemeManager sharedInstance] applyTheme:[DemoThemeRed new]];
+}
 
 #pragma mark - UISceneSession lifecycle
 
